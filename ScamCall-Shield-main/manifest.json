@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "ScamCall Shield",
+  "version": "1.0.0",
+  "description": "Check selected text locally for scam risk signals.",
+  "minimum_chrome_version": "127",
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "background": {
+    "service_worker": "extension/background.js"
+  },
+  "action": {
+    "default_title": "ScamCall Shield",
+    "default_popup": "extension/popup.html"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  }
+}
